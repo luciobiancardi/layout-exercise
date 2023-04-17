@@ -21,6 +21,27 @@ img {
   margin: 0 auto;
   padding: 0 20px;
   max-width: 980px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 30px;
+}
+
+.grid article {
+  grid-column: 1;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid article {
+    grid-column: 1;
+  }
+
+  .grid aside {
+    grid-column: 1;
+  }
 }
 
 nav {
