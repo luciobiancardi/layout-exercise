@@ -30,6 +30,11 @@ img {
   grid-column: 1;
 }
 
+.grid article img {
+  float: left;
+  margin: 1px 20px;
+}
+
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
